@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Hour</title>
+
+	<!-- Script -->
+ 	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.pep.js"></script> 
+    <script type="text/javascript" src="vendor/switchery/js/switchery.min.js"></script> 
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/moment.js"></script> 
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/bootstrap-timepicker.js"></script> 
+
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="fonts/custom/flaticon.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/switchery/css/switchery.css"></link>  
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-timepicker/bootstrap-timepicker.css"></link>  
+    </head>
+  <body>
+    
+     <!-- Second navbar for sign in -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt=""></a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="active" href="#">Dashboard</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            
+          </ul>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    
+<div class="container-fluid">
+
+    
+   <div class="container wizard-container">
+    
+        
+            <div class="row bs-wizard">
+                
+                <div class="col-xs-2 bs-wizard-step complete">
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Welcome</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step current"><!-- complete -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Business Hours</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step disabled"><!-- complete -->
+                 
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Staff</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                 
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Service</div>
+                </div>
+                 <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Pricing</div>
+                </div>
+                 <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Done</div>
+                </div>
+            </div>
+
+            <div class="wizard-inner row" style="background-image: url('images/bh_bg.jpg')">
+                  <div class="col-md-9 col-md-offset-3">
+                    <h1 class="title">Set your Business Hours</h1>
+                    <h5>Let yur customer know when you are open</h5>
+                    <hr />
+
+                    
+                <div class="panel-body form-horizontal">
+                   
+                   <div class="row">
+                    <div class="col-xs-3">Monday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="monday_to" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="monday_from"/>
+                          
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Tuesday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="tuesday_to"/>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="tuesday_from" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Wednesday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="wednesday_to" />
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="wednesday_from"/>
+                         
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Thursday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="thursday_to"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="thursday_from"/>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Friday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="friday_to"/>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="friday_from" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Saturday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="saturday_to" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="saturday_from" />
+                          
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Sunday</div>
+                    <div class="col-xs-2"><input type="checkbox" class="js-switch"  /></div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="sunday_to"/>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <input type='text' class="form-control" id="sunday_from"/>
+                          
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   
+<hr>
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                         <a href="1welcome.html" class="btn prev_btn">
+                                 Prev
+                            </a>
+                            <a href="3add_staff.html" class="btn next_btn">
+                                 Next
+                            </a>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+
+                  
+            </div>
+        
+        
+        
+        
+        
+  </div>
+</div>
+  
+
+	
+   
+  </body>
+</html>
