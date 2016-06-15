@@ -1,0 +1,241 @@
+<script type="text/javascript" src="js/function.js"></script>   
+<div class="container-fluid">
+
+    
+   <div class="container wizard-container">
+    
+        
+            <div class="row bs-wizard">
+                
+                <div class="col-xs-2 bs-wizard-step complete">
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Welcome</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step current"><!-- complete -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Business Hours</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step disabled"><!-- complete -->
+                 
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Staff</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                 
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Service</div>
+                </div>
+                 <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Pricing</div>
+                </div>
+                 <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Done</div>
+                </div>
+            </div>
+
+            <div class="wizard-inner row" style="background-image: url('images/bh_bg.jpg')">
+                  <div class="col-md-9 col-md-offset-3">
+                    <h1 class="title">Set your Business Hours</h1>
+                    <h5>Let yur customer know when you are open</h5>
+                    <hr />
+
+                    
+                <div class="panel-body form-horizontal">
+                   
+                   <div class="row">
+                    <div class="col-xs-3">Monday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch" ng-model="dashboard.isMonday" /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isMonday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="monday_to" ng-model="dashboard.monday_to" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.monday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="monday_from" ng-model="dashboard.monday_from" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.monday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Tuesday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch" ng-model="dashboard.isTuesday" /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isTuesday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="tuesday_to" ng-model="dashboard.tuesday_to" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.tuesday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="tuesday_from" ng-model="dashboard.tuesday_from" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.tuesday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Wednesday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch" ng-model="dashboard.isTuesday" /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isWednesday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="wednesday_to" ng-model="dashboard.wednesday_to"/> -->
+                         <ng-timepicker theme="blue" ng-model="dashboard.wednesday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="wednesday_from" ng-model="dashboard.wednesday_from" /> -->
+                         <ng-timepicker theme="blue" ng-model="dashboard.wednesday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Thursday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch" ng-model="dashboard.isThursday" /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isThursday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="thursday_to" ng-model="dashboard.thursday_to" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.thursday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="thursday_from" ng-model="dashboard.thursday_from" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.thursday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Friday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch" ng-model="dashboard.isFriday" /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isFriday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="friday_to" ng-model="dashboard.friday_to"/> -->
+                         <ng-timepicker theme="blue" ng-model="dashboard.friday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="friday_from" ng-model="dashboard.friday_from" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.friday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Saturday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch" ng-model="dashboard.isSaturday" /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isSaturday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="saturday_to" ng-model="dashboard.saturday_to" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.saturday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="saturday_from" ng-model="dashboard.saturday_from" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.saturday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-xs-3">Sunday</div>
+                    <div class="col-xs-2"><!-- <input type="checkbox" class="js-switch"  /> -->
+                    <label class="switch"><input type="checkbox" ng-model="dashboard.isSunday" checked><i></i></label>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="sunday_to" ng-model="dashboard.sunday_to" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.sunday_to" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-1 text-center">to</div>
+                    <div class="col-xs-3">
+                    <div class="form-group">
+                        <div class='input-group date' >
+                          <!-- <input type='text' class="form-control" id="sunday_from" ng-model="dashboard.sunday_from" /> -->
+                          <ng-timepicker theme="blue" ng-model="dashboard.sunday_from" show-meridian="true"></ng-timepicker>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                   
+<hr>
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                          <button class="btn prev_btn" ng-click="goToDashboardStep1()">
+                            Prev
+                          </button>
+                          <button class="btn next_btn" ng-click="goToDashboardStep3()">
+                               Next
+                          </button>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+
+                  
+            </div>        
+  </div>
+</div>
+</div>

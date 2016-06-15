@@ -1,0 +1,39 @@
+{
+    "result": [
+        {
+            "id": 4,
+            "date": "01/30/2015 | 9:25PM",
+            "service": "Blowout @ Aarna Salon",
+            "price": "100"
+        },
+        {
+            "id": 4,
+            "date": "01/30/2015 | 9:25PM",
+            "service": "Blowout @ Aarna Salon",
+            "price": "100"
+        },
+        {
+            "id": 4,
+            "date": "01/30/2015 | 9:25PM",
+            "service": "Blowout @ Aarna Salon",
+            "price": "100"
+        },{
+            "id": 4,
+            "date": "01/30/2015 | 9:25PM",
+            "service": "Blowout @ Aarna Salon",
+            "price": "100"
+        },{
+            "id": 4,
+            "date": "01/30/2015 | 9:25PM",
+            "service": "Blowout @ Aarna Salon",
+            "price": "100"
+        },{
+            "id": 4,
+            "date": "01/30/2015 | 9:25PM",
+            "service": "Blowout @ Aarna Salon",
+            "price": "100"
+        }
+    ],
+    "message": null,
+    "statusCode": 200
+}

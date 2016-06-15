@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Welcome</title>
+
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="js/angular_1.2.13.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/service.js"></script>
+    <script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/controllers/dashboardCtrl.js"></script>
+    <script src="scripts/controllers/loginCtrl.js"></script>
+    <script src="scripts/controllers/createClientCtrl.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.pep.js"></script> 
+    <script type="text/javascript" src="vendor/switchery/js/switchery.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/moment.js"></script> 
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/bootstrap-timepicker.js"></script> 
+    <script type="text/javascript" src="vendor/TreeMultiSelect/jquery.tree-multiselect.js"></script>
+    <script src="node_modules/ng-timepicker/src/js/ngTimepicker.js"></script>
+
+
+    
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/custom/flaticon.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/switchery/css/switchery.css"></link>  
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-timepicker/bootstrap-timepicker.css"></link>  
+    <link rel="stylesheet" type="text/css" href="vendor/TreeMultiSelect/jquery.tree-multiselect.css"></link>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/ng-timepicker/src/css/ngTimepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <!-- Script -->
+    <!--<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.pep.js"></script>   
+    <script type="text/javascript" src="vendor/switchery/js/switchery.min.js"></script> 
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/moment.js"></script> 
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/bootstrap-timepicker.js"></script> 
+    <script type="text/javascript" src="vendor/TreeMultiSelect/jquery.tree-multiselect.js"></script> 
+    
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>-->
+
+    
+
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="fonts/custom/flaticon.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/switchery/css/switchery.css"></link>  
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-timepicker/bootstrap-timepicker.css"></link>
+    <link rel="stylesheet" type="text/css" href="vendor/TreeMultiSelect/jquery.tree-multiselect.css"></link>   -->
+    </head>
+    <body ng-app="connectUiApp" ng-controller="MainCtrl">
+        <!-- <div id="nav" ng-include src="'views/nav.html'"  ></div>
+        <div ui-view ng-controller="dashboardCtrl"></div> -->
+       <div ui-view="header"></div>
+       <div ui-view="content"></div>
+
+       <div ui-view="dashboardcontent" ng-controller="dashboardCtrl"></div>
+    </body>
+</html>

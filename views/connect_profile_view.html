@@ -1,0 +1,321 @@
+<div class="container-fluid">
+    <div class="container main-container">
+        
+        <form>
+        <div class="col-md-12" >
+        <h2>
+            Contact Information
+        </h2>
+        <hr/>
+            <div class="col-md-12 no-padding">
+                <div class="col-md-7">
+                    <div class="form-group">
+                        <div class="form-group form-group label-floating">
+                            <label class="control-label" for="i6">
+                                Business Name
+                            </label>
+                            <input class="form-control" type="text">
+                                
+                            </input>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 no-padding">
+                        <div class="form-group form-group label-floating">
+                            <label class="control-label" for="i6">
+                                Mobile Number
+                            </label>
+                            <input class="form-control" type="text">
+                               
+                            </input>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <div class="form-group form-group label-floating">
+                            <label class="control-label" for="i6">
+                                Phone Number
+                            </label>
+                            <input class="form-control" type="text">
+                               
+                            </input>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="upload-img">
+                        <i aria-hidden="true" class="fa fa-camera">
+                        </i>
+                        <p>
+                            Add your logo
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span class="clearfix">
+            </span>
+            <h2>
+                Locations
+            </h2>
+            <hr/>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="form-group form-group label-floating">
+                        <label class="control-label" for="i6">
+                            Street Address
+                        </label>
+                        <input class="form-control" type="text">
+                            
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group form-group label-floating">
+                        <label class="control-label" for="i6">
+                            Street Address 2
+                        </label>
+                        <input class="form-control" type="text">
+                            
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="form-group form-group label-floating">
+                        <label class="control-label" for="i6">
+                            City
+                        </label>
+                        <input class="form-control" type="text">
+                           
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group form-group label-floating">
+                        <label class="control-label" for="i6">
+                            State
+                        </label>
+                        <input class="form-control" type="text">
+                            
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group form-group label-floating">
+                        <label class="control-label" for="i6">
+                            Zip
+                        </label>
+                        <input class="form-control" type="text">
+                            
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group form-group label-floating">
+                        <label class="control-label" for="i6">
+                            Phone Number
+                        </label>
+                        <input class="form-control" type="text">
+                           
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp">
+                </script>
+                <div style="overflow:hidden;height:350px;width:100%;">
+                    <div id="gmap_canvas" style="height:440px;width:700px;">
+                    </div>
+                    <div>
+                        <small>
+                            <a href="http://embedgooglemaps.com">
+                                embed google maps
+                            </a>
+                        </small>
+                    </div>
+                    <div>
+                        <small>
+                            <a href="https://termsofusegenerator.net">
+                                terms of use generator
+                            </a>
+                        </small>
+                    </div>
+                    <style>
+                        #gmap_canvas img{max-width:none!important;background:none!important}
+                    </style>
+                </div>
+                <script type="text/javascript">
+                    function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <span class="clearfix">
+            </span>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="s1">
+                        Parking
+                    </label>
+                    <select class="form-control" id="s1">
+                        <option value="Apple fritter">
+                            Select Parking
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="s1">
+                        Language Spoken
+                    </label>
+                    <select class="form-control" id="s1">
+                        <option value="Apple fritter">
+                            Select language Spoken
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <span class="clearfix">
+            </span>
+            <div class="col-md-12">
+                <h5>
+                    Public Transit
+                </h5>
+                <p>
+                    ACE 14th street, NY City
+                </p>
+            </div>
+            <span class="clearfix">
+            </span>
+            <hr/>
+            <h2>
+                Mailing Address
+            </h2>
+            <div class="col-md-12">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                            Same as business address.
+                        </input>
+                    </label>
+                </div>
+            </div>
+            <span class="clearfix">
+            </span>
+            <hr/>
+            <h2>
+                Photo of your business
+            </h2>
+            <small class="pull-right">
+                Maximum 10 Photos
+            </small>
+            <div class="col-md-12">
+                <div class="upload-img">
+                    <i aria-hidden="true" class="fa fa-camera">
+                    </i>
+                    <p>
+                        Add your logo
+                    </p>
+                </div>
+                <div class="clearfix">
+                </div>
+                <small>
+                    5 MB upload limit
+                </small>
+            </div>
+            <span class="clearfix">
+            </span>
+            <hr/>
+            <h2>
+                Online Presence
+            </h2>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="i5ps">
+                        <i aria-hidden="true" class="fa fa-facebook-official">
+                        </i>
+                    </label>
+                    <div class="col-sm-10 input-group">
+                        <input class="form-control" id="i5ps" placeholder="Enter Facebook url"" type="text">
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="i5ps">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </i>
+                    </label>
+                    <div class="col-sm-10 input-group">
+                        <input class="form-control" id="i5ps" placeholder="Enter Twitter url"" type="text">
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="i5ps">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </i>
+                    </label>
+                    <div class="col-sm-10 input-group">
+                        <input class="form-control" id="i5ps" placeholder="Enter Instagram url"" type="text">
+                        </input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="i5ps">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </i>
+                    </label>
+                    <div class="col-sm-10 input-group">
+                        <input class="form-control" id="i5ps" placeholder="Enter Linkedin url" type="text">
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+             <div class="form-group">
+                    <label class="control-label col-sm-4" for="i5ps">
+                        Website
+                        </i>
+                    </label>
+                    <div class="col-sm-8 input-group">
+                        <input class="form-control" id="i5ps" placeholder="Enter Website url"" type="text">
+                        </input>
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <label class="control-label col-xs-4" for="i5ps">
+                        Select Custom URL
+                        </i>
+                    </label>
+                    <div class="col-xs-3 input-group">
+                        <input class="form-control" id="i5ps" placeholder="Enter Website url"" type="text">
+                        </input>
+                    </div>
+                    <label class="control-label col-xs-5">
+                         .aarahabeauty.com
+                        </i>
+                    </label>
+                  
+                </div>
+
+            </div>
+           
+            </div>
+           
+ <div class="clearfix"></div>
+            <hr>
+
+               <div class="form-group">
+                        <div class="text-right">
+                         <a href="2business_hour.html" class="btn prev_btn">
+                                 Cancel
+                            </a>
+                            <a href="4service.html" class="btn next_btn">
+                                 Save
+                            </a>
+                        </div>
+                    </div>
+       </div>
+        </form>
+
+    </div>
+</div>

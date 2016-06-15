@@ -1,0 +1,128 @@
+<script type="text/javascript" src="js/function.js"></script>
+<div class="container-fluid">
+
+    
+   <div class="container wizard-container">
+    
+        
+            <div class="row bs-wizard">
+                
+                <div class="col-xs-2 bs-wizard-step complete">
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Welcome</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step complete"><!-- complete -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Business Hours</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step complete"><!-- complete -->
+                 
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Staff</div>
+                </div>
+                
+                <div class="col-xs-2 bs-wizard-step current"><!-- active -->
+                 
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center">Service</div>
+                </div>
+                 <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Pricing</div>
+                </div>
+                 <div class="col-xs-2 bs-wizard-step disabled"><!-- active -->
+                  
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <a href="#" class="bs-wizard-dot"></a>
+                  <div class="bs-wizard-info text-center"> Done</div>
+                </div>
+            </div>
+
+            <div class="wizard-inner row" style="background-image: url('images/service_bg.jpg')">
+                  <div class="col-md-9 col-md-offset-3">
+                    <h1 class="title">What Service does Aarna Beauty 
+Provide ?</h1>
+                    <h5>Select Treatment catagory and treatment name. </h5>
+                    <hr />
+
+                    
+                <div class="panel-body form-horizontal" border-space="0">
+                   <table class="table pricing_table">  
+                    <thead> 
+                      <tr> 
+                        <th class="service_head" width="40%">Add Treatment Catagory</th> 
+                        
+                        <th class="staff_head">Search treatment name</th> 
+                      </tr> 
+                    </thead> 
+                    <tbody> 
+                      <tr> 
+                        <td class="service_body no-magin no-padding">
+                          <ul class="service_catagory">
+                            <li class="active"><i class="badge">5</i> Message</li>
+                            <li><i class="badge">3</i> Fitness</li>
+                            <li><i class="badge">2</i> Hair</li>
+                            <li><i class="badge">5</i> Counselling</li>
+                            <li><i class="badge">11</i> Counselling</li>
+                          </ul>
+
+                        </th> 
+                        
+                        <td class="staff_body">
+                          <select id="demo1" multiple="multiple">
+                              <option value="one" data-section="Massage" data-index="1">Pregnancy Massage</option>
+                              <option value="two" data-section="Massage" data-index="2">Reflexology</option>
+                              <option value="tree" data-section="Massage" data-index="3">Sports Massage</option>
+                              <option value="four" data-section="Massage" data-index="4">Back Massage</option>
+                             
+                              <option value="FIVE" data-section="Swedish Massage Therapy" data-index="1">Therapy 1</option>
+                              <option value="SIX" data-section="Swedish Massage Therapy" data-index="2">Therapy 2</option>
+                             
+                              
+                              
+                          </select>
+
+                        </td>                        
+                      </tr> 
+                      
+                      
+                    </tbody> 
+                  </table>
+             
+                  
+                   
+
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                         <button class="btn prev_btn" ng-click="goToDashboardStep3()">
+                                 Prev
+                            </button>
+                            <button class="btn next_btn" ng-click="goToDashboardStep5()">
+                                 Next
+                            </button>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+
+                  
+            </div>
+        
+        
+        
+        
+        
+  </div>
+</div>
+  

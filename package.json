@@ -1,0 +1,11 @@
+{
+  "name": "aarnabeauty",
+  "private": true,
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

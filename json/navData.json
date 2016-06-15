@@ -1,0 +1,70 @@
+{
+    "result": [
+        {
+            "id": 2,
+            "name": "Hair",
+            "masterServices": [
+                {
+                    "id": 2,
+                    "name": "Hair Cut",
+                    "masterSubServices": [
+                        {
+                            "id": 3,
+                            "name": "Short Hair Cut",
+                            "serviceId": 0
+                        },
+                        {
+                            "id": 2,
+                            "name": "Long Hair Cut",
+                            "serviceId": 0
+                        }
+                    ],
+                    "categoryId": null
+                },
+                {
+                    "id": 3,
+                    "name": "Hair Color",
+                    "masterSubServices": [],
+                    "categoryId": null
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Spa",
+            "masterServices": [
+                {
+                    "id": 5,
+                    "name": "Hair Spa",
+                    "masterSubServices": [],
+                    "categoryId": null
+                },
+                {
+                    "id": 4,
+                    "name": "Body Spa",
+                    "masterSubServices": [],
+                    "categoryId": null
+                },
+                {
+                    "id": 6,
+                    "name": "Nail Spa",
+                    "masterSubServices": [
+                        {
+                            "id": 4,
+                            "name": "Manicure",
+                            "serviceId": 0
+                        }
+                    ],
+                    "categoryId": null
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Nails",
+            "masterServices": []
+        }
+    ],
+    "message": null,
+    "statusCode": 200
+}
