@@ -17,7 +17,7 @@ angular.module('connectUiApp')
     $scope.userInfo = {};
 
     $scope.userLogin = function () {
-
+        $scope.dataLoading = true;
         AuthenticationService.Login($scope.userInfo.username, $scope.userInfo.password, function(response) {
             if(response.success) {
                 AuthenticationService.SetCredentials($scope.userInfo.username, $scope.userInfo.password);
@@ -25,6 +25,7 @@ angular.module('connectUiApp')
             } else {
                 console.log(response.message);
                 $scope.error = response.message;
+                $scope.dataLoading = false;
             }
         });
     };
