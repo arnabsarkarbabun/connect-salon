@@ -13,7 +13,7 @@ elems.forEach(function(html) {
 
 	
 	// var switchery = new Switchery(elem, { color: '#faab43', secondaryColor: '#fC73d0', jackColor: '#fcf45e', jackSecondaryColor: '#c8ff77' });
-	$('#monday_to, #monday_from, #tuesday_to, #tuesday_from, #wednesday_to, #wednesday_from, #thursday_to, #thursday_from,#friday_to, #friday_from,#saturday_to, #saturday_from,#sunday_to, #sunday_from').datetimepicker({format: 'LT'})
+	//$('#monday_to, #monday_from, #tuesday_to, #tuesday_from, #wednesday_to, #wednesday_from, #thursday_to, #thursday_from,#friday_to, #friday_from,#saturday_to, #saturday_from,#sunday_to, #sunday_from').datetimepicker({format: 'LT'})
 
 
 /*var options = { hideSidePanel: true, startCollapsed : true };
