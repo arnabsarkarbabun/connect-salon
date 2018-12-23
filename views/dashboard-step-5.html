@@ -55,17 +55,30 @@
 
                     
                 <div class="panel-body form-horizontal" border-space="0">
+                    
                    <table class="table pricing_table">  
                     <thead> 
                       <tr> 
                         <th class="service_head" width="40%">Service</th> 
                         <th class="duration_price_head" width="15%">Duration</th> 
                         <th class="duration_price_head" width="15%">Price</th> 
+                        <!--
                         <th class="staff_head">Prabha</th> 
                         <th class="staff_head">Ankur</th> 
+                        -->
+                        <th class="staff_head" ng-repeat="stylist in dashboard.stylistList">{{stylist.firstName}}</th>
                       </tr> 
                     </thead> 
                     <tbody> 
+                        <tr ng-repeat="service in serviceFlatten | filter:{isChosen:true}">
+                            <td class="service_body">{{service.name}}</td> 
+                            <td class="duration_price_body"><input type="text" class="form-control" ng-model="service.price"/></td> 
+                            <td class="duration_price_body"><input type="text" class="form-control" ng-model="service.duration"/></td> 
+                            <td class="staff_body" ng-repeat="stylist in service.stylists">
+                                <input type="checkbox" ng-model="stylist.isEnabled"/>{{stylist.stylistDetails.firstName}}
+                            </td>
+                        </tr>
+                      <!--
                       <tr> 
                         <td class="service_body">Swedish Massage Therapy</th> 
                         <td class="duration_price_body"><input type="text" class="form-control" /></td> 
@@ -122,10 +135,10 @@
                         <td class="staff_body"><input type="checkbox" /></td> 
                         <td class="staff_body"><input type="checkbox" /></td>                        
                       </tr> 
-                      
+                      -->
                     </tbody> 
                   </table>
-             
+                    
                   <hr >
                    
 

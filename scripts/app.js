@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('connectUiApp', ['ui.router', 'jkuri.timepicker', 'ngCookies'])
+  .module('connectUiApp', ['ui.router', 'jkuri.timepicker', 'ngCookies', 'ngFileUpload', 'ngMaterial', 'scDateTime'])
   .run(['$rootScope', '$location', '$cookieStore', '$http',
     function ($rootScope, $location, $cookieStore, $http) {
         // keep user logged in after page refresh
@@ -25,7 +25,8 @@ angular
             }
         });
   }])
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+     $httpProvider.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
     
     $urlRouterProvider.otherwise('/login');
     
@@ -171,8 +172,8 @@ angular
                 templateUrl: '/views/nav.html'
             },
             'content': {
-                templateUrl: '/views/connect_settings_client_communication.html',
-                controller : 'createClientCtrl'
+                templateUrl: '/views/settings.html',
+                controller : 'clientComCtrl'
             }
         }
     })
@@ -196,9 +197,21 @@ angular
             },
             'content': {
                 templateUrl: '/views/connect_profile_view.html',
-                controller : 'createClientCtrl'
+                controller : 'profileViewCtrl'
             }
         }
     })  
+    .state('settings',{
+      url: '/settings',
+      views: {
+            'header': {
+                templateUrl: '/views/nav.html'
+            },
+            'content': {
+                templateUrl: '/views/settings.html',
+                controller : 'settingsCtrl'
+            }
+        }        
+    })
 });
 

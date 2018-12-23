@@ -1,0 +1,94 @@
+JSON: {
+ "saloonId":1,
+ "afternoonEnd":"2",
+ "afternoonStart":"4",
+ "morningStart":"10",
+ "morningEnd":"12",
+ "eveStart":"6",
+ "eveEnd":"8",
+ "firstName":"8",
+ "lastName":"8",
+ "stylistPhone":"8",
+ "stylistEmailId":"8",
+ "isActive":true,
+ "isVerified":true,
+ "password":"1238",
+ "isFeatured":true,
+ "serviceName":"Service_Overall",
+ "serviceDescription":"Service_Overall",
+ "price":150,
+ "netPrice":"110",
+ "isCustomService":false,
+ "stylistList":
+ [{
+  "firstName": "AAAA",
+  "lastName": "9811223344",
+  "phone": "12345678",
+  "emailId": "weer@gmail.com",
+  "isActive": true,
+  "isVerified": true,
+  "password":"12345",
+  "stylistTypeId":1,
+  "serviceId":1,
+  "price":10
+ },
+ {
+  "firstName": "BBBB",
+  "lastName": "BBBB",
+  "phone": "78656757",
+  "emailId": "bbbb@gmail.com",
+  "isActive": true,
+  "isVerified": true,
+  "password":"bbbb",
+  "stylistTypeId":1,
+  "serviceId":1,
+  "price":20
+ }],
+ "stylistTypePriceMapArray": [{
+  "stylistTypeId": 1,
+  "price": 10
+ }, {
+  "stylistTypeId": 2,
+  "price": 5
+ }],
+ "duration":10,
+ "isMultiplePriceTypeEnabled":true,
+ "isStylistBasedPriceTypeEnabled":true,
+ "isActive":true,
+ "subServiceNamePriceMapArray":[{
+  "name": "SS_1",
+  "price": "10"
+ }, {
+  "name": "SS_2",
+  "price": "5"
+ }],
+ "cleaningTime":10,
+ "processingTime":10, 
+ "subServiceName":"SubService_overall",
+ "subServicePrice":100,
+ "servicePrice":50,
+ "serviceId":1,
+ "saloonWeekScheduleDTOs":[{
+  "fromTime": 8,
+  "toTime": 6,
+  "weekDay":"MON",
+  "isavailable":true
+ }, 
+                           {
+  "fromTime": 8,
+  "toTime": 6,
+  "weekDay":"TUE",
+  "isavailable":true
+ },{
+  "fromTime": 8,
+  "toTime": 6,
+  "weekDay":"WED",
+  "isavailable":true
+ },
+                           {
+  "fromTime": 8,
+  "toTime": 6,
+  "weekDay":"THURS",
+  "isavailable":true
+ }]
+}

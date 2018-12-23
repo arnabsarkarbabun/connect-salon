@@ -1,0 +1,109 @@
+{
+
+  "result": [
+
+    {
+
+      "id": 8,
+
+      "name": "Hair",
+
+      "masterServices": [
+
+        {
+
+          "id": 1,
+
+          "name": "Hair Color",
+
+          "masterSubServices": [],
+
+          "categoryId": null
+
+        },
+
+        {
+
+          "id": 2,
+
+          "name": "Hair Cut",
+
+          "masterSubServices": [
+
+            {
+
+              "id": 2,
+
+              "name": "Short Hair",
+
+              "serviceId": 0
+
+            },
+
+            {
+
+              "id": 1,
+
+              "name": "Long Hair",
+
+              "serviceId": 0
+
+            }
+
+          ],
+
+          "categoryId": null
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": 9,
+
+      "name": "Spa",
+
+      "masterServices": []
+
+    },
+
+    {
+
+      "id": 10,
+
+      "name": "Nail",
+
+      "masterServices": []
+
+    },
+
+    {
+
+      "id": 11,
+
+      "name": "Massage",
+
+      "masterServices": []
+
+    },
+
+    {
+
+      "id": 12,
+
+      "name": "Make Up",
+
+      "masterServices": []
+
+    }
+
+  ],
+
+  "message": null,
+
+  "statusCode": 200
+
+}

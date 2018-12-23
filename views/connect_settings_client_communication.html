@@ -9,19 +9,19 @@
                     <div class="col-md-8">
                 <h4>Client Scheduling Notification</h4>
                 <div class="form-group">
-<input type="checkbox" class="js-switch"  />
-</div>
-<small>Whenever you book, rechedule or cancel a client appointment we'll send an email.</small>
+                    <input type="checkbox" class="js-switch" ng-model="notification.clientScheduleNotifications" />
+                </div>
+                <small>Whenever you book, rechedule or cancel a client appointment we'll send an email.</small>
 
-<h4>Client Appointment Reminder</h4>
-  <input type="checkbox" class="js-switch"  />
-</div>
-     
+            <h4>Client Appointment Reminder</h4>
+              <input type="checkbox" class="js-switch" ng-model="notification.clientAppoRemainder" />
+            </div>
+
 <h4>Text Message setting</h4>   
-<p>Text message reminder <input type="text" /> Hours before appointment</p>    
+<p>Text message reminder <input type="text" ng-model="notification.smsReminderTime"/> Hours before appointment</p>    
 
 <h4>Email setting</h4>   
-<p>Send Email <input type="text" /> Hours before appointment</p>    
+<p>Send Email <input type="text" ng-model="notification.emailRemainderTime"/> Hours before appointment</p>    
            
  <div class="clearfix"></div>
             <hr>

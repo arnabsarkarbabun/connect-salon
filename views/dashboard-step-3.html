@@ -57,13 +57,15 @@
                 <div class="panel-body form-horizontal">
                    
                  <div class="row text-center">
-                  <div class="col-xs-4">
+                  <div class="col-xs-4" ng-repeat="stylists in dashboard.stylistList">
                     <div class="staff-box">
                       <img style="background-image: url('images/profile1.jpg')" class="staff-profile-pic" />
-                      <h4>Prabha Iyer</h4>
-                      <small>prabs10@gmail.com</small>
+                      <h4>{{stylists.firstName}}&nbsp{{stylists.lastName}}</h4>
+                      <small>{{stylists.emailId}}</small>
                     </div>
                   </div>
+                </div>
+                     <!--
                   <div class="col-xs-4">
                     <div class="staff-box">
                       <img style="background-image: url('images/profile2.jpg')" class="staff-profile-pic" />
@@ -78,30 +80,51 @@
                       <small>anuragcse007@gmail.com</small>
                     </div>
                   </div>
-                 </div>
+                 </div>-->
 
-                 <div class="row staff-add-box">
+                 <!--div class="row staff-add-box">
                   <div class="col-xs-3">
-                    <img style="background-image: url('images/profile1.jpg')" class="staff-profile-pic" />
-                    <a href="#" class="text-center">Upload Profile Pic</a>
+                    <img ngf-thumbnail="file || 'images/profile1.jpg'" class="staff-profile-pic" />
+                    <a class="text-center" ngf-select="uploadStylistPhoto($file)">Upload Profile Pic</a>
                   </div>
                   <div class="col-xs-7">
                     <div class="col-sm-12 form-group">
-                            <input style="margin-top: 10px" type="text" ng-model="dashboard.staffName" class="form-control" placeholder="Enter Staff Name...">
+                            <input style="margin-top: 10px" name
+                                   ="name" type="text" ng-model="stylist.name" class="form-control" placeholder="Enter Staff Name..." required>
                         </div>
                         <div class="col-sm-12 form-group">
-                            <input type="text" class="form-control" placeholder="Enter Mail ID..." ng-model="dashboard.staff_email" >
+                            <input type="email" name="email" class="form-control" placeholder="Enter Mail ID..." ng-model="stylist.emailId" >
                         </div>
                   </div>
                   <div class="col-xs-2">
-                    <button type="button" class="btn add_btn" style="margin-top:50px">
-                                 Add
-                            </button>
+                    <button type="button" class="btn add_btn" style="margin-top:50px" ng-click="addStylist()">
+                        Add
+                    </button>
                   </div>
-                 </div>
-                  
+                 </div-->
+                <div class="row staff-add-box">
+                    <form name="stylistAddForm" novalidate >
+                        <div class="col-xs-7">
+                            <div class="col-sm-12 form-group" ng-class="{ 'has-error' : stylistAddForm.username.$invalid && !stylistAddForm.username.$pristine }">
+                                <input style="margin-top: 10px" name
+                                       ="name" type="text" ng-model="stylist.name" class="form-control" placeholder="Enter Staff Name..." required>
+                                <p ng-show="stylistAddForm.name.$invalid && stylistAddForm.name.$persistance" class="help-block">You name is required.</p>
+                            </div>
+                            <div class="col-sm-12 form-group" ng-class="{ 'has-error' : stylistAddForm.email.$invalid && !stylistAddForm.email.$pristine }">
+                                <input type="email" name="email" class="form-control" placeholder="Enter Mail ID..." ng-model="stylist.emailId" >
+                                <p ng-show="stylistAddForm.name.$invalid && stylistAddForm.name.$persistance" class="help-block">Please enter a valid mail id.</p>
+                            </div>
+                          </div>
+                          <div class="col-xs-2" >
+                            <button type="button" class="btn add_btn" style="margin-top:50px" ng-disabled="stylistAddForm.name.$valid && stylistAddForm.email.$valid && addStylist()">
+                                Add
+                            </button>
+                          </div>
+                        
+                    </form>
+                </div>
                    
-<hr>
+                 <hr>
                     <div class="form-group">
                         <div class="col-sm-12 text-right">
                          <button class="btn prev_btn" ng-click="goToDashboardStep2()">

@@ -76,6 +76,9 @@ body{ background: #f0f3f6; font-family: 'Open Sans', sans-serif;}
     font-size: 16px;
 }
 
+.ng-dirty .ng-invalid{
+    border-color: red;
+}
 
 .staff-box{}
 .staff-box img.staff-profile-pic{width: 50px; height: 50px; border-radius: 500px;     background-size: cover;
@@ -92,7 +95,7 @@ body{ background: #f0f3f6; font-family: 'Open Sans', sans-serif;}
     background-repeat: no-repeat;}
 
 
-
+/*
 .service_body ul.service_catagory{ padding: 0; margin-top: 10px; }
 .service_body ul.service_catagory li{ font-size: 14px; padding: 5px 20px;list-style-type: none; }
 .service_body ul.service_catagory li.active{background: #585f5e; font-weight: bold;}
@@ -108,7 +111,7 @@ body{ background: #f0f3f6; font-family: 'Open Sans', sans-serif;}
     line-height: 20px;
 }
 
-
+*/
 
 .pricing_table {}
 .pricing_table th.service_head {background: #484e4d; color: #fff; font-size: 12px; border:none;}

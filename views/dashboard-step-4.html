@@ -57,7 +57,41 @@ Provide ?</h1>
 
                     
                 <div class="panel-body form-horizontal" border-space="0">
-                   <table class="table pricing_table">  
+                    <div layout="column" layout-gt-sm="row" style="overflow:scroll;">
+                        <div flex>
+                            <md-toolbar class="md-hue-3">
+                                <md-input-container class="md-block" md-no-float flex-gt-xs>
+                                    <input ng-model="filters" placeholder="search services">
+                                  </md-input-container>
+                            </md-toolbar>
+                            <md-content class="service_body" style="height: 400px;" md-theme="altTheme">
+                                <section ng-repeat="category in allService | filter:filters">
+                                <md-list layout-padding flex class="md-dense">
+                                    <md-subheader class="md-primary"><h4><i class="badge">{{category.noOfServices}}</i>{{category.name}}</h4></md-subheader>
+                                    <md-list-item ng-repeat="service in category.services | filter:filters">
+                                        <div class="md-list-item-text" layout="column">
+                                            <md-switch ng-model="service.isChosen" aria-label="{{service.name}}">
+                                                {{ service.name }}
+                                            </md-switch>
+                                          </div>
+                                        
+                                        <!--div ng-if="service.noOfSubService>0">
+                                            <md-list layout-padding flex class="md-dense">
+                                                <md-list-item ng-repeat="subservice in service.subServices">
+                                                    <md-switch ng-model="subservice.isChosen" aria-label="subservice.name">
+                                                        {{ subservice.name }}
+                                                    </md-switch>
+                                                </md-list-item>
+                                            </md-list>
+                                        </div-->
+                                    </md-list-item>
+                                </md-list>
+                                </section>
+                            </md-content>
+                        </div>
+                    </div>
+                <!--
+                    <table class="table pricing_table">  
                     <thead> 
                       <tr> 
                         <th class="service_head" width="40%">Add Treatment Catagory</th> 
@@ -69,11 +103,9 @@ Provide ?</h1>
                       <tr> 
                         <td class="service_body no-magin no-padding">
                           <ul class="service_catagory">
-                            <li class="active"><i class="badge">5</i> Message</li>
-                            <li><i class="badge">3</i> Fitness</li>
-                            <li><i class="badge">2</i> Hair</li>
-                            <li><i class="badge">5</i> Counselling</li>
-                            <li><i class="badge">11</i> Counselling</li>
+                              <div ng-repeat="service in servicesOffered">
+                                  <li ng-click="getSubService(service.id)">{{service.name}}</li>
+                              </div>
                           </ul>
 
                         </th> 
@@ -98,6 +130,7 @@ Provide ?</h1>
                       
                     </tbody> 
                   </table>
+                -->
              
                   
                    
