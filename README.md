@@ -1,6 +1,4 @@
-# aarna-beauty
-
-## Build & development
+# salon
 
 Run `npm install bower`
 Run `bower install`
